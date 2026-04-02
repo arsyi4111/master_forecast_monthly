@@ -231,27 +231,6 @@ Due to lag-based features:
 
 ---
 
-## Future Improvement
-
-### Modeling Enhancements
-
-* Hybrid modeling (ML + rule-based)
-* Separate handling for sparse time series
-* Outlier detection and capping mechanisms
-
-### Feature Engineering
-
-* Additional lag features (e.g. lag_6)
-* Extended rolling windows
-
-### Business Layer
-
-* Gap analysis vs target
-* Top-performing branch/product identification
-* Integration with visualization/dashboard tools
-
----
-
 ## Conclusion
 
 This project provides a scalable and automated forecasting framework for financial services revenue across branches and products.
