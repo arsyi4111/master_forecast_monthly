@@ -167,7 +167,7 @@ Forecasting is performed using a recursive approach.
 The pipeline is executed via:
 
 ```bash
-python run_forecast.py
+python run_forecast_test.py
 ```
 
 #### Available Modes
