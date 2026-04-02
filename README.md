@@ -167,15 +167,16 @@ Forecasting is performed using a recursive approach.
 The pipeline is executed via:
 
 ```bash
-python run_forecast_test.py
+python main.py
 ```
 
 #### Available Modes
 
 ```text
-1. Train model + forecast
-2. Use existing model + forecast
-3. Only prepare data
+1. Create Master Data and Engineered Data
+2. Create Forecasting Model and Forecast
+3. Forecast Using Existing Model
+4. Full Pipeline (Data + Model + Forecast)
 ```
 
 ---
