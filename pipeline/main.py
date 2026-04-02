@@ -1,5 +1,7 @@
 import os
 import pandas as pd
+import subprocess
+import sys
 
 from master_data import get_master_data, get_engineered_data
 from forecast_logic import train_model, load_model, forecast
@@ -65,6 +67,18 @@ def forecast_only():
 
     print(f"\nForecast saved to: {output_file}")
 
+def run_dashboard():
+    print("\n[STEP] Launching Dashboard...")
+
+    try:
+        subprocess.run(
+            [sys.executable, "-m", "streamlit", "run", "dashboard.py"],
+            check=True
+        )
+    except Exception as e:
+        print("Failed to launch dashboard.")
+        print(e)
+
 
 def main():
     print("=" * 50)
@@ -76,8 +90,9 @@ def main():
     print("2. Create Forecasting Model and Forecast")
     print("3. Forecast Using Existing Model")
     print("4. Full Pipeline (Data + Model + Forecast)")
+    print("5. Run Dashboard")
 
-    choice = input("\nEnter choice (1/2/3/4): ").strip()
+    choice = input("\nEnter choice (1/2/3/4/5): ").strip()
 
     if choice == "1":
         create_master_and_engineered()
@@ -91,6 +106,9 @@ def main():
     elif choice == "4":
         create_master_and_engineered()
         create_model_and_forecast()
+
+    elif choice == "5":
+        run_dashboard()
 
     else:
         print("Invalid choice.")
