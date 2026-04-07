@@ -7,7 +7,7 @@ from master_data import get_master_data, get_engineered_data
 from forecast_logic import train_model, load_model, forecast
 
 
-OUTPUT_PATH = "../data/output/"
+OUTPUT_PATH = "data/output/"
 os.makedirs(OUTPUT_PATH, exist_ok=True)
 
 

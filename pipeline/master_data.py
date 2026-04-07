@@ -6,7 +6,7 @@ from datetime import datetime
 # =========================
 # CONFIG
 # =========================
-RAW_PATH = "../data/raw/"
+RAW_PATH = "data/raw/"
 
 # =========================
 # 1. HELPERS

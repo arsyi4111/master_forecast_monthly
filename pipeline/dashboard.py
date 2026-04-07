@@ -6,8 +6,8 @@ import plotly.graph_objects as go
 # =========================
 # CONFIG
 # =========================
-HIST_PATH = "../data/output/engineered_data.csv"
-FCST_PATH = "../data/output/forecast_result.csv"
+HIST_PATH = "data/output/engineered_data.csv"
+FCST_PATH = "data/output/forecast_result.csv"
 
 
 # =========================

@@ -10,8 +10,8 @@ from sklearn.metrics import mean_absolute_error
 # =========================
 # CONFIG
 # =========================
-MODEL_PATH = "../output/model/xgb_model.pkl"
-ENCODER_PATH = "../output/model/encoders.pkl"
+MODEL_PATH = "data/output/model/xgb_model.pkl"
+ENCODER_PATH = "data/output/model/encoders.pkl"
 
 
 # =========================
@@ -67,9 +67,9 @@ def train_model(df):
     y_test = test[TARGET]
 
     model = XGBRegressor(
-        n_estimators=300,
+        n_estimators=1000,
         learning_rate=0.05,
-        max_depth=6,
+        max_depth=8,
         random_state=42
     )
 
