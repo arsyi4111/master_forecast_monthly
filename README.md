@@ -177,6 +177,7 @@ python main.py
 2. Create Forecasting Model and Forecast
 3. Forecast Using Existing Model
 4. Full Pipeline (Data + Model + Forecast)
+5. Run Dashboard (Functional, but features still on progress)
 ```
 
 ---
